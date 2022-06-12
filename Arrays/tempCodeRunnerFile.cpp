@@ -1,2 +1,2 @@
-int p = add;
-    // cout<<p;
+
+    // cout<<"the largest number in the vector is: "<<n;
