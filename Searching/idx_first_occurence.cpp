@@ -56,7 +56,7 @@ int main()
     int arr[] = {3,9,41,66,79};
     int x=90;
     int idx_r = idx_first_occurence_recursive(arr, 0, 4, x);
-    int idx = idx_first_occurence(arr, 0, 4, x);
-    cout<<"The index of the element to be searched "<<x<<" is : "<<idx_r;
+    int idx = idx_first_occurence(arr, 5, x);
+    cout<<"The index of the element to be searched "<<x<<" is : "<<idx_r<<endl;
     cout<<"The index of the element to be searched "<<x<<" is : "<<idx;
 }
