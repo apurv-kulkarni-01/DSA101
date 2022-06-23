@@ -3,7 +3,6 @@ using namespace std;
 
 void bubble_sort(int arr[], int n)
 {
-    int temp;
     bool swapped = false;
     for(int i=0 ; i<n-1 ; i++)
     {
@@ -24,8 +23,8 @@ void bubble_sort(int arr[], int n)
 
 int main()
 {
-    int arr[] = {10,8,20,5,1};
-    bubble_sort(arr, 5);
+    int arr[] = {24,18,38,43,14,40,1,54};
+    bubble_sort(arr, 8);
     for(auto i : arr)
     {
         cout<<i<<" ";

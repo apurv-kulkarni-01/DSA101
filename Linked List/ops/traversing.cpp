@@ -10,6 +10,9 @@ struct Node{
     }
 };
 
+
+// TC: O(n)
+// Aux: -
 void traverse(Node *head){
     Node* curr = head;
     cout<<"Traversal begins..."<<endl;
@@ -23,6 +26,9 @@ void traverse(Node *head){
     cout<<"NULL";
 }
 
+
+// TC: O(n)
+// Aux: O(n)
 void recursive_traverse(Node *curr)
 {
     if(curr==NULL)
