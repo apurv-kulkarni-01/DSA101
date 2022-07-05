@@ -18,7 +18,7 @@ struct MyQueue{
             cout<<endl<<"-->Overflow<--"<<endl<<endl;
         }
     }
-    int dequeue(){
+    int dequeue(){                              // T.C. = O(n)
         int del = arr[0];
         for(int i=0;i<size-1;i++)                 // and not  for(int i=0;i<size-2;i++)
         {
