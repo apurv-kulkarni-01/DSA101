@@ -11,7 +11,7 @@ int main()
     {
         cout<<arr[i]<<" ";
     }
-    cout<<"\n\nNew array"<<endl;
+    cout<<"\n\nPrinting array using while loop"<<endl;
 
     // printing array using while loop 
     int i=0;
@@ -26,12 +26,12 @@ int main()
     // pointer arithmetic
     int* p = arr;
     cout<<endl<<endl<<"Printing array using pointer: "<<*p<<endl;
-    cout<<endl<<endl<<"Printing array using pointer: "<<*(p+1)<<endl;
-    cout<<endl<<endl<<"Printing array using pointer: "<<*(p+2)<<endl;
+    cout<<endl<<"Printing array using pointer: "<<*(p+1)<<endl;
+    cout<<endl<<"Printing array using pointer: "<<*(p+2)<<endl;
 
     // declaring array without any value
     cout<<endl<<endl<<"This is a new array."<<endl;
-    int new_arr[5] = {1};
+    int new_arr[5] = {7,9};
     
     i=0;
     while(i<5)
@@ -42,6 +42,7 @@ int main()
 
 
     cout<<endl<<endl<<"This is a new new new new array."<<endl;
+    cout<<"Indexes which are not initialised store garbage values in them"<<endl;
     int newnew_arr[5];
     newnew_arr[2]=5;
     
