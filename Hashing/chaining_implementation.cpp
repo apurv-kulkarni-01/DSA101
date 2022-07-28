@@ -38,7 +38,7 @@ struct MyHash{
     }
     void remove(int key){
         int idx = key%bucket;
-        table[idx].remove(key);
+        table[idx].remove(key);     // Removes all the elements from the list, which are equal to given element.
     }
 };
 
