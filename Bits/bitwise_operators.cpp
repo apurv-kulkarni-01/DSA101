@@ -13,4 +13,6 @@ int main(){
     cout<<(x<<2);
     cout<<"\nRightshift operator: \n";
     cout<<(33>>2);
+    cout<<"\nbitwise Not: \n";
+    cout<<(~5);
 }
