@@ -22,6 +22,28 @@ vector<int> reverBin(int n){
 }
 
 
+int binaryToDecimal(int n)
+{
+    int num = n;
+    int dec_value = 0;
+ 
+    // Initializing base value to 1, i.e 2^0
+    int base = 1;
+ 
+    int temp = num;
+    while (temp) {
+        int last_digit = temp % 10;
+        temp = temp / 10;
+ 
+        dec_value += last_digit * base;
+ 
+        base = base * 2;
+    }
+ 
+    return dec_value;
+}
+
+
 int main(){
     int num;
     cout<<"Number to be converted into binary and then reverse its binary digit order: ";
@@ -32,10 +54,13 @@ int main(){
         cout<<i<<" ";
     }
     cout<<"\nThe number corresponding to the binary digits is: "<<endl;
-    int dec=0;
-
-    // for(int j = ans.size()-1;j>=0;j-- ){
-
-    // }
-    
+    int bin_no=0;
+    int count=0;
+    for(int j=0; j<ans.size();j++){
+        bin_no+=ans[j];
+        bin_no*=10;
+    }
+    bin_no/=10;
+    int dec = binaryToDecimal(bin_no);
+    cout<<dec;
 }
