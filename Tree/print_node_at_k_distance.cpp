@@ -12,11 +12,11 @@ struct Node{
     }
 };
 
-T.C. = wc = THETA(n)
-T.C. = general = O(n)
+// T.C. = wc = THETA(n)
+// T.C. = general = O(n)
 
-A.S. = wc = THETA(h)
-A.S. = general = O(h)
+// A.S. = wc = THETA(h)
+// A.S. = general = O(h)
 
 void atK(Node* root, int k){
     if(root==NULL){return;}
