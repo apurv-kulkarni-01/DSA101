@@ -74,7 +74,7 @@ struct Deque{
     }
     void insertFront(int x){
         if(isFull()) return;
-        int front = (front+cap-1)%cap;
+        front = (front+cap-1)%cap;
         arr[front] = x;
         size++;
     }
