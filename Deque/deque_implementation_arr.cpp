@@ -37,7 +37,7 @@ using namespace std;
 
 
 // efficient solution
-
+// O(1) = all ops 
 
 struct Deque{
     int size, cap, front;
