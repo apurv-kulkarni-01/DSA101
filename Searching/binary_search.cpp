@@ -1,55 +1,38 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-// int binary_search(int arr[], int n, int x)
-// {
-//     int low=0, high=n-1, mid=(low+high)/2;
-//     if(arr[mid]==x)
-//         return mid;
-//     else
-//     { 
-//         if(arr[mid]<x)
-//         {
-//             low=mid+1;
-//         }
-//         else if(arr[mid]>x)
-//         {
-//             high=mid-1;
-//         }
-//         for(int i=low;i<=high;i++)
-//         {
-//             if(arr[i]==x)
-//                 return i;
-//         }
-
-//     }
-//     return -1;
-
-// }
-
-
-int binary_search(int arr[], int n, int x)
+int binary_search(vector<int> v, int x)
 {
-    int low=0, high=n-1; 
-    while(low<=high)
+    // Has complexity of O(log(n))
+    int left = 0;
+    int right = v.size() - 1;
+    while (left <= right)
     {
-        int mid=(low+high)/2;
-        if(arr[mid]==x)
+        int mid = (left + right) / 2;
+        if (x == v[mid])
+        {
             return mid;
-        else if(arr[mid]>x)
-            high=mid-1;
-        else if(arr[mid]<x)
-            low=mid+1;
+        }
+        else
+        {
+            if (x > v[mid])
+            {
+                left = mid + 1;
+            }
+            else
+            {
+                right = mid - 1;
+            }
+        }
     }
     return -1;
 }
 
-
-
 int main()
 {
-    int arr[]={10,20,30,40,50,60};
-    int x=40;
-    int idx = binary_search(arr, 5,x);
-    cout<<"The index of the element to be searched "<<x<<" is : "<<idx<<endl;
+    vector<int> arr = {1, 2, 3, 5, 6, 6, 9};
+    int x = 6;
+    int res = binary_search(arr, x);
+    cout << "Index of " << x << " in the arr is: " << res;
+    return 0;
 }
