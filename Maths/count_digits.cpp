@@ -1,7 +1,7 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-// // T.C = theta(d)   d=no. of digits 
+// // T.C = theta(d)   d=no. of digits
 // // apk
 // int count_digits(int x)
 // {
@@ -22,9 +22,10 @@ using namespace std;
 // T.C = theta(d)
 int count_digits(int x)
 {
-    int count=0;
-    while(x>0){
-        x /=10;
+    int count = 0;
+    while (x > 0)
+    {
+        x /= 10;
         count++;
     }
     return count;
@@ -33,8 +34,8 @@ int count_digits(int x)
 int main()
 {
     int x = 58642;
-    
-    cout<<"Basics "<<5/10<<endl;
+
+    cout << "Basics " << 5 / 10 << endl;
     int res = count_digits(x);
-    cout<<res;
+    cout << res;
 }
